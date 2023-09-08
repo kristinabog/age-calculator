@@ -1,11 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+
 body {
     background-color: hsl(0, 0%, 94%);
+    font-family: 'Poppins', 'sans-serif';
 }
 
 .calculator {
     background-color: hsl(0, 0%, 100%);
     border-radius: 3% 3% 30% 3%;
-    width: 45rem;
+    width: 43rem;
     height: 30rem;
 }
 
@@ -16,4 +19,29 @@ body {
     justify-content: center; 
     align-items: center;
     height: 100vh;
+}
+
+input {
+    font-size: 32px;
+    height: 3rem;
+    width: 7rem;
+    border-radius: 5px;
+    border: 1px solid hsl(0, 0%, 86%);
+}
+
+.inputs {
+    display: flex;
+    margin: 2.5rem;
+}
+
+.inputs div {
+    margin-bottom: 3px;
+    margin-right: 2rem;
+}
+
+label {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: hsl(0, 1%, 44%);
 }
