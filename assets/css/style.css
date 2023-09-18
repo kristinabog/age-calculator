@@ -18,19 +18,23 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  margin: 2.5rem;
 }
 
 input {
   font-size: 32px;
+  font-weight: 700;
   height: 3rem;
   width: 7rem;
   border-radius: 5px;
   border: 1px solid hsl(0, 0%, 86%);
+  padding-left: 1rem;
+  cursor: pointer;
 }
 
 .inputs {
   display: flex;
-  margin: 2.5rem;
+  border-bottom: 1px solid hsl(0, 1%, 44%);
 }
 
 .inputs div {
@@ -45,4 +49,24 @@ label {
   color: hsl(0, 1%, 44%);
 }
 
-/*# sourceMappingURL=style.css.map */
+.calc-wrapper {
+  margin: 2.5rem;
+}
+
+input:focus {
+  border-color: hsl(259, 100%, 65%) !important; 
+  outline: none;
+  caret-color: hsl(259, 100%, 65%);
+  padding-left: 1rem;
+  padding-right: 0.5rem;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+
+
